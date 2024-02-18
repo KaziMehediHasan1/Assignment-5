@@ -101,68 +101,306 @@
 
       <!-- Select Ticket -->
       <div
-        class="bg-[#F7F8F8] w-full h-full mt-10 rounded-tl-3xl rounded-tr-3xl border-solid border-orange-300"
+        class="bg-[#F7F8F8] mt-10 rounded-tl-3xl rounded-tr-3xl border-solid "
       >
         <div class="text-center pt-14">
           <h1 class="font-semibold text-2xl">P.H Paribahan</h1>
           <p class="pt-4">
             Yes, you can run unit tests and view the results directly within the
-            app. The integrated testing features allow for a streamlined .
+            app. <br> The integrated testing features allow for a streamlined .
           </p>
         </div>
         <!-- Ticket Price -->
 
-        <div class="bg-white w-[80%] mx-auto mt-10 rounded-lg">
-          <div class="flex ml-8">
-            <div class="flex">
-              <div class="flex mt-10">
-                <img
-                  class="lg:h-10 mt-2"
-                  src="images/bus-logo.png"
-                  alt="Bus logo"
-                />
-                <div class="ml-4 space-y-2">
-                  <h1 class="font-semibold text-xl">Greenline Paribahan</h1>
-                  <p>Coach-009-WEB! AC_Business</p>
+      
+          <div class="w-[80%] bg-white mt-10 mx-auto rounded-3xl">
+            <div>
+              <div class="flex items-center ml-10">
+                <div class="flex">
+                  <img
+                    class="lg:h-10 mt-2"
+                    src="images/bus-logo.png"
+                    alt="Bus logo"
+                  />
+                  <div class="ml-4">
+                    <h1 class="font-semibold text-xl">Greenline Paribahan</h1>
+                    <p>Coach-009-WEB! AC_Business</p>
+                  </div>
+                </div>
+                <div
+                  class="flex items-center bg-green-200 rounded-md h-10 w-32 mt-10 ml-[700px]"
+                >
+                  <img
+                    class="h-8"
+                    src="images/seat-green.png"
+                    alt="Seat Images"
+                  />
+                  <p class="ml-2 text-green-600">40 Seats left</p>
                 </div>
               </div>
-              <button
-                class="flex items-center bg-green-200 rounded-md h-10 w-32 mt-10 ml-[700px]"
-              >
-                <img
-                  class="h-8"
-                  src="images/seat-green.png"
-                  alt="Seat Images"
-                />
-                <p class="ml-2 text-green-600">40 Seats left</p>
-              </button>
-            </div>
-            <div class="ml-[220px] space-y-1 mt-20">
-              <img src="images/fare.png" alt="" />
-              <div class="pt-8">
-                <h1 class="font-extrabold text-2xl">550 Taka</h1>
-                <p class="text-xl">Per Seat</p>
+              
+                <!-- Ticket Location -->
+            <section class="w-[1140px] ml-10 rounded-2xl mt-16 flex  justify-between">
+              <div class="bg-[#F7F8F8] px-20 p-8 rounded-3xl mx-auto w-[80%]">
+                <div class="flex justify-between pt-4">
+                  <p class="ml-4 text-xl">Route</p>
+                  <p class="mr-4 text-xl font-semibold">Dhaka - Sylhet</p>
+                </div>
+                <div
+                style="border: 1px dashed rgb(184, 226, 228);margin: 0 auto; margin-top: 20px;"
+              ></div>
+    
+                <div class="flex justify-between mt-4">
+                  <p class="ml-4 text-xl">Departure Time</p>
+                  <p class="mr-4 text-xl font-semibold">9:00 PM</p>
+                </div>
+                <div
+                style="border: 1px dashed rgb(184, 226, 228);margin: 0 auto; margin-top: 20px;"
+              ></div>
+                <div class="flex justify-between mt-10 rounded-lg">
+                  <button class="bg-gray-200 p-2 ml-4 rounded-lg">
+                    Boarding Point - Laxmipur
+                  </button>
+                  <button class="bg-gray-200 p-2 rounded-lg">Dropping Point - Bogura</button>
+                  <button class="bg-gray-200 p-2 mr-4 rounded-lg">Est. Time - 11 Hour</button>
+                </div>
               </div>
+
+                <div class="mt-14">
+                  <img src="images/fare.png" alt="" />
+                  <div class="pt-8">
+                    <h1 class="font-extrabold text-2xl">550 Taka</h1>
+                    <p class="text-xl">Per Seat</p>
+                  </div>
+              </div>
+            </section>
+            
             </div>
           </div>
 
-          <!-- Ticket Location -->
-          <section class="bg-[#F7F8F8] w-[1140px] ml-10 rounded-md">
-            <div class="flex justify-between pt-4">
-              <p class="ml-4 text-xl">Route</p>
-              <p class="mr-4 text-xl font-semibold">Dhaka - Sylhet</p>
-            </div>
-
-            <div class="flex justify-between mt-8">
-              <p class="ml-4 text-xl">Departure Time</p>
-              <p class="mr-4 text-xl font-semibold">9:00 PM</p>
-            </div>
-            <div class="flex justify-between mt-10 rounded-lg">
-              <button class="bg-gray-200 p-2 ml-4">
-                Boarding Point - Laxmipur
+        
+          <section class="flex justify-around mt-10 w-[80%] mx-auto bg-white p-6 rounded-3xl">
+            <!-- Left Section -->
+            <div class="">
+              <h1 class="font-semibold">Select Your Seat</h1>
+              <div
+                style="margin-top: 10px; border: 1px dashed rgb(184, 226, 228)"
+              ></div>
+              <div class="grid grid-cols-2">
+                <div class="flex mt-10 space-x-3">
+                  <img src="images/seat-gray.png" alt="" />
+                  <p>Available</p>
+                </div>
+                <div class="flex ml-40 pt-10 space-x-3">
+                  <img src="images/seat-green-filled.png" alt="" />
+                  <p class="text-green-500 font-bold">Selected</p>
+                </div>
+              </div>
+              <div
+                style="
+                  margin-top: 10px;
+                  border-bottom: 1px dashed rgb(184, 226, 228);
+                "
+              ></div>
+              <button class="bg-slate-300 p-3 rounded-lg px-10 mt-10 float-end">
+                <img src="images/tabler-icon-steering-wheel.svg" alt="" />
               </button>
-              <button class="bg-gray-200 p-2">Dropping Point - Bogura</button>
-              <button class="bg-gray-200 p-2 mr-4">Est. Time - 11 Hour</button>
+    
+              <!-- A1 % A2 -->
+              <div class="mt-40 grid grid-cols-5">
+                <div class="grid space-y-14 p-3 font-semibold">
+                  <p>A</p>
+                  <p>B</p>
+                  <p>C</p>
+                  <p>D</p>
+                  <p>E</p>
+                  <p>F</p>
+                  <p>G</p>
+                  <p>H</p>
+                  <p>I</p>
+                  <p>J</p>
+                </div>
+                <div class="grid space-y-8 ml-4">
+                  <button class="bg-slate-200 p-3 rounded-lg">A1</button>
+                  <button class="bg-slate-200 p-3 rounded-lg">B1</button>
+                  <button class="bg-slate-200 p-3 rounded-lg">C1</button>
+                  <button class="bg-slate-200 p-3 rounded-lg">D1</button>
+                  <button class="bg-slate-200 p-3 rounded-lg">E1</button>
+                  <button class="bg-slate-200 p-3 rounded-lg">F1</button>
+                  <button class="bg-slate-200 p-3 rounded-lg">G1</button>
+                  <button class="bg-slate-200 p-3 rounded-lg">H1</button>
+                  <button class="bg-slate-200 p-3 rounded-lg">I1</button>
+                  <button class="bg-slate-200 p-3 rounded-lg">J1</button>
+                </div>
+                <div class="grid space-y-8 ml-4">
+                  <button class="bg-slate-200 p-3 rounded-lg">A2</button>
+                  <button class="bg-slate-200 p-3 rounded-lg">B2</button>
+                  <button class="bg-slate-200 p-3 rounded-lg">C2</button>
+                  <button class="bg-slate-200 p-3 rounded-lg">D2</button>
+                  <button class="bg-slate-200 p-3 rounded-lg">E2</button>
+                  <button class="bg-slate-200 p-3 rounded-lg">F2</button>
+                  <button class="bg-slate-200 p-3 rounded-lg">G2</button>
+                  <button class="bg-slate-200 p-3 rounded-lg">H2</button>
+                  <button class="bg-slate-200 p-3 rounded-lg">I2</button>
+                  <button class="bg-slate-200 p-3 rounded-lg">J2</button>
+                </div>
+                <div class="grid space-y-8 ml-4">
+                  <button class="bg-slate-200 p-3 rounded-lg">A3</button>
+                  <button class="bg-slate-200 p-3 rounded-lg">B3</button>
+                  <button class="bg-slate-200 p-3 rounded-lg">C3</button>
+                  <button class="bg-slate-200 p-3 rounded-lg">D3</button>
+                  <button class="bg-slate-200 p-3 rounded-lg">E3</button>
+                  <button class="bg-slate-200 p-3 rounded-lg">F4</button>
+                  <button class="bg-slate-200 p-3 rounded-lg">G4</button>
+                  <button class="bg-slate-200 p-3 rounded-lg">H4</button>
+                  <button class="bg-slate-200 p-3 rounded-lg">I4</button>
+                  <button class="bg-slate-200 p-3 rounded-lg">J4</button>
+                </div>
+                <div class="grid space-y-8 ml-4">
+                  <button class="bg-slate-200 p-3 rounded-lg">A4</button>
+                  <button class="bg-slate-200 p-3 rounded-lg">B4</button>
+                  <button class="bg-slate-200 p-3 rounded-lg">C4</button>
+                  <button class="bg-slate-200 p-3 rounded-lg">D4</button>
+                  <button class="bg-slate-200 p-3 rounded-lg">E4</button>
+                  <button class="bg-slate-200 p-3 rounded-lg">F4</button>
+                  <button class="bg-slate-200 p-3 rounded-lg">G4</button>
+                  <button class="bg-slate-200 p-3 rounded-lg">H4</button>
+                  <button class="bg-slate-200 p-3 rounded-lg">I4</button>
+                  <button class="bg-slate-200 p-3 rounded-lg">J4</button>
+                </div>
+              </div>
+            </div>
+    
+            <div
+              style="
+                width: 1px;
+                background-color: rgb(184, 226, 228);
+                margin-top: 27px;
+                border-style: dashed; margin-left:40px; margin-right:40px;
+              "
+            ></div>
+            <!-- Right Section -->
+            <div class="">
+              <h1 class="font-semibold">Select Your Seat</h1>
+              <div
+                style="
+                  margin-top: 10px;
+                  border-bottom: 1px dashed rgb(184, 226, 228);
+                "
+              ></div>
+              <div class="bg-[#F7F8F8] mt-10 p-5 rounded-lg w-[550px] text-center">
+                <div class="grid grid-cols-3 font-semibold">
+                  <p>
+                    Seat <span class="bg-[#1DD100] px-1 rounded-lg ml-1">0</span>
+                  </p>
+                  <p>Class</p>
+                  <p>Price</p>
+                </div>
+                <div
+                  style="
+                    margin-top: 10px;
+                    border-bottom: 1px dashed rgb(184, 226, 228);
+                  "
+                ></div>
+                <div class="grid grid-cols-3 mt-4">
+                  <div class="space-y-4 mr-4">
+                    <p>C2</p>
+                    <p>C2</p>
+                  </div>
+                  <div class="space-y-4">
+                    <p>Economoy</p>
+                    <p>Economoy</p>
+                  </div>
+                  <div class="space-y-4">
+                    <p>550</p>
+                    <p>550</p>
+                  </div>
+                </div>
+                <div
+                  style="
+                    margin-top: 10px;
+                    border-bottom: 1px dashed rgb(184, 226, 228);
+                  "
+                ></div>
+                <div class="grid grid-cols-3 mt-4 font-semibold">
+                  <p>Total Price</p>
+                  <p></p>
+                  <p>BDT 1100</p>
+                </div>
+                <div class="mt-5">
+                  <button class="bg-white rounded-lg p-2">
+                    <input class="p-2" type="text" placeholder="Have any Coupon?" />
+                    <a
+                      class="bg-[#1DD100] p-2 text-white font-semibold rounded-lg"
+                      href=""
+                      >Apply</a
+                    >
+                  </button>
+                </div>
+                <div class="grid grid-cols-3 mt-4 font-semibold">
+                  <p>Grand Total</p>
+                  <p></p>
+                  <p>BDT 1100</p>
+                </div>
+              </div>
+              <div class="mt-5">
+                <p class="font-semibold">Passenger Name*</p>
+                <div
+                  style="
+                    margin-top: 10px;
+                    border-bottom: 1px dashed rgb(184, 226, 228);
+                  "
+                ></div>
+                <input
+                  type="text"
+                  placeholder="Enter your name"
+                  class="mt-5 bg-gray-100 rounded-lg p-3 w-full"
+                />
+              </div>
+              <div class="mt-5">
+                <p class="font-semibold">Phone Number*</p>
+                <div
+                  style="
+                    margin-top: 10px;
+                    border-bottom: 1px dashed rgb(184, 226, 228);
+                  "
+                ></div>
+                <input
+                  type="text"
+                  placeholder="Enter your phone number"
+                  class="mt-5 bg-gray-100 rounded-lg p-3 w-full"
+                />
+              </div>
+              <div class="mt-5">
+                <p class="font-semibold">Email ID</p>
+                <div
+                  style="
+                    margin-top: 10px;
+                    border-bottom: 1px dashed rgb(184, 226, 228);
+                  "
+                ></div>
+                <input
+                  type="text"
+                  placeholder="Enter your email id"
+                  class="mt-5 bg-gray-100 rounded-lg p-3 w-full"
+                />
+              </div>
+              <button
+                class="w-full bg-[#1DD100] mt-10 p-3 rounded-lg text-white font-semibold text-xl"
+              >
+                Next
+              </button>
+              <div class="mt-10 flex justify-around">
+                <a style="margin-top: 10px; border-bottom: 1px solid black" href="#"
+                  >Terms and Conditions</a
+                >
+                <a
+                  style="margin-top: 10px; border-bottom: 1px solid black"
+                  href="#"
+                  href="#"
+                  >Cancellation Policy</a
+                >
+              </div>
             </div>
           </section>
         </div>
@@ -170,122 +408,40 @@
 
       <!-- Select Seat And booked -->
 
-      <section class="flex justify-around mt-10 w-[80%] mx-auto">
-        <!-- Left Section -->
-        <div class="">
-          <h1 class="font-semibold">Select Your Seat</h1>
-          <div style="margin-top:10px; border: 1px dashed cadetblue;"></div>
-          <div class="grid grid-cols-2">
-            <div class="flex mt-10 space-x-3">
-              <img src="images/seat-gray.png" alt=""/>
-              <p>Available</p>
-            </div>
-            <div class="flex ml-52 pt-10 space-x-3">
-              <img src="images/seat-green-filled.png" alt=""/>
-              <p class="text-green-500 font-bold">Selected</p>
-            </div>
-          </div>
-          <button class="bg-slate-300 p-3 rounded-lg px-10 mt-10 float-end">
-            <img src="images/tabler-icon-steering-wheel.svg" alt="" />
-          </button>
-
-          <!-- A1 % A2 -->
-          <div class="mt-40 grid grid-cols-5">
-            <div class="grid space-y-14 p-3 font-semibold">
-              <p>A</p>
-              <p>B</p>
-              <p>C</p>
-              <p>D</p>
-              <p>E</p>
-              <p>F</p>
-              <p>G</p>
-              <p>H</p>
-              <p>I</p>
-              <p>J</p>
-            </div>
-            <div class="grid space-y-8 ml-4">
-              <button class="bg-slate-200 p-3 rounded-lg">A1</button>
-              <button class="bg-slate-200 p-3 rounded-lg">B1</button>
-              <button class="bg-slate-200 p-3 rounded-lg">C1</button>
-              <button class="bg-slate-200 p-3 rounded-lg">D1</button>
-              <button class="bg-slate-200 p-3 rounded-lg">E1</button>
-              <button class="bg-slate-200 p-3 rounded-lg">F1</button>
-              <button class="bg-slate-200 p-3 rounded-lg">G1</button>
-              <button class="bg-slate-200 p-3 rounded-lg">H1</button>
-              <button class="bg-slate-200 p-3 rounded-lg">I1</button>
-              <button class="bg-slate-200 p-3 rounded-lg">J1</button>
-            </div>
-            <div class="grid space-y-8 ml-4">
-              <button class="bg-slate-200 p-3 rounded-lg">A2</button>
-              <button class="bg-slate-200 p-3 rounded-lg">B2</button>
-              <button class="bg-slate-200 p-3 rounded-lg">C2</button>
-              <button class="bg-slate-200 p-3 rounded-lg">D2</button>
-              <button class="bg-slate-200 p-3 rounded-lg">E2</button>
-              <button class="bg-slate-200 p-3 rounded-lg">F2</button>
-              <button class="bg-slate-200 p-3 rounded-lg">G2</button>
-              <button class="bg-slate-200 p-3 rounded-lg">H2</button>
-              <button class="bg-slate-200 p-3 rounded-lg">I2</button>
-              <button class="bg-slate-200 p-3 rounded-lg">J2</button>
-            </div>
-            <div class="grid space-y-8 ml-4">
-              <button class="bg-slate-200 p-3 rounded-lg">A3</button>
-              <button class="bg-slate-200 p-3 rounded-lg">B3</button>
-              <button class="bg-slate-200 p-3 rounded-lg">C3</button>
-              <button class="bg-slate-200 p-3 rounded-lg">D3</button>
-              <button class="bg-slate-200 p-3 rounded-lg">E3</button>
-              <button class="bg-slate-200 p-3 rounded-lg">F4</button>
-              <button class="bg-slate-200 p-3 rounded-lg">G4</button>
-              <button class="bg-slate-200 p-3 rounded-lg">H4</button>
-              <button class="bg-slate-200 p-3 rounded-lg">I4</button>
-              <button class="bg-slate-200 p-3 rounded-lg">J4</button>
-            </div>
-            <div class="grid space-y-8 ml-4">
-              <button class="bg-slate-200 p-3 rounded-lg">A4</button>
-              <button class="bg-slate-200 p-3 rounded-lg">B4</button>
-              <button class="bg-slate-200 p-3 rounded-lg">C4</button>
-              <button class="bg-slate-200 p-3 rounded-lg">D4</button>
-              <button class="bg-slate-200 p-3 rounded-lg">E4</button>
-              <button class="bg-slate-200 p-3 rounded-lg">F4</button>
-              <button class="bg-slate-200 p-3 rounded-lg">G4</button>
-              <button class="bg-slate-200 p-3 rounded-lg">H4</button>
-              <button class="bg-slate-200 p-3 rounded-lg">I4</button>
-              <button class="bg-slate-200 p-3 rounded-lg">J4</button>
-            </div>
-          </div>
-        </div>
-        <!-- Right Section -->
-        <div class="">
-          <h1 class="font-semibold">Select Your Seat</h1>
-          <div class="bg-[#F7F8F8] space-x-10 mt-10 p-8">
-            <div class="grid grid-rows-3 grid-cols-3">
-              <div class="">
-                <p class="font-semibold">
-                  Seat <span class="bg-[#1DD100] px-1 rounded-lg">0</span>
-                </p>
-                <p class="pt-2">C2</p>
-                <p class="pt-2">C2</p>
-                <p class="font-semibold">Total Price</p>
-              </div>
-              <div>
-                <p class="font-semibold">Class</p>
-                <p class="pt-2">Economoy</p>
-                <p class="pt-2">Economoy</p>
-              </div>
-              <div>
-                <p class="font-semibold">Price</p>
-                <p class="pt-2">550</p>
-                <p class="pt-2">550</p>
-                <p class="font-semibold">BDT 1100</p>
-              </div>
-            </div>
-            <div class="p-3">
-              <input class="p-3" type="text" placeholder="Have any Coupon" />
-              <button class="bg-[#1DD100] p-3">Apply</button>
-            </div>
-          </div>
-        </div>
-      </section>
+      
     </main>
-    <footer></footer>
+    <footer>
+      <div class="bg-black mt-20 h-96">
+        <div class="flex justify-around text-white">
+          <div class="mt-10 space-y-3">
+            <h1 class="font-extrabold text-2xl">P-Ticket</h1>
+            <p>
+              P-Ticket is a digital platform to make your <br />
+              daily commuting better.
+            </p>
+          </div>
+          <div class="mt-10">
+            <h1 class="text-2xl font-semibold">Download our app</h1>
+            <div class=" mt-4 flex">
+              <button><img src="images/playstore.png" alt="play store">
+              </button>
+              <div class="ml-5">
+                <p>GET IT ON </p>
+                <p>Google Play</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top:50px; border:1px dashed rgb(193, 205, 206)"></div>
+        <div class="flex justify-around text-white mt-10 ml-16">
+          <p>@all rights reserved, P-Ticket services limited.2024</p>
+          <div class="flex space-x-10">
+            <a href="">Terms & condition</a>
+            <a href="">Return & refund policy</a>
+            <a href="">Privacy policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
