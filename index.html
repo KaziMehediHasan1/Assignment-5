@@ -13,101 +13,279 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-
   </head>
   <body>
     <main class="mt-8">
-        <!-- Navbar Part -->
-        <div class="container flex justify-between mx-auto items-center">
-            <h1 class="font-bold text-2xl">P-Ticket</h1>
-           
-            <div class="flex gap-x-10">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Destination</a>
-                <a href="#">Search</a>
-            </div>
-           
-            <div class="flex gap-x-2 bg-green-200 p-2 px-3 rounded-md">
-                <button class="text-green-700 font-semibold">Bus</button>
-                <img src="images/bus-icon.png" alt="">
-            </div>
-        </div>
-        <!-- Banner Part -->
-        <div class="mt-10 text-center relative">
-            <img class="mx-auto w-[90%] lg:w-[80%]" src="images/banner.png" alt="Banner Images">
-            <div class="absolute top-5 ml-[30%] lg:ml-[35%] lg:top-20 ">
-                <h1 class="text-white font-extrabold text-2xl lg:text-6xl lg:mt-2">End-to-End Travel with</h1>
-                <h1 class="text-[#1DD100] lg:mt-10 font-extrabold text-2xl lg:text-6xl ">P Paribahan</h1>
-                <p class="mt-5 lg:mt-20  text-slate-50">Yes, you can run unit tests and view the results directly within the app. <br> The integrated testing features allow for a streamlined .</p>
-                <button class="mt-28 lg:mt-36 bg-[#1DD100] rounded-lg p-4 font-bold lg:text-xl">Buy Tickets</button>
-            </div>
-        </div>
-        <!-- Coupon Card -->
-        <div class="mt-28 text-center">
-            <h1 class="text-3xl font-semibold">Best Offers for you</h1>
-           <div class="flex justify-center space-x-20 mt-20">
-            <!-- Coupon Card 1 -->
-            <div class="flex bg-[#FFBF0F] w-[350px] rounded-xl h-32 lg:h-44 lg:w-[550px]">
-                <div class="">
-                    <h1>15% OFF</h1>
-                    <p>on your next purchase</p>
-                    <p>use by January 2024</p>
-                </div>
-                <img class="ml-10 lg:ml-36" src="images/cupon-devider.png" alt="">
-                <div>
-                    <h1>NEW <sub>15</sub></h1>
-                    <p>Coupon Code</p>
-                </div>
-            </div>
-            <!-- Coupon Card 2 -->
-            <div class="flex justify-center bg-[#F78C9C] w-[350px] lg:w-[550px] rounded-xl h-32 lg:h-44">
-                <div class="">
-                    <h1>20% OFF</h1>
-                    <p>on your next purchase</p>
-                    <p>use by January 2024</p>
-                </div>
-                <img class="ml-10 lg:ml-36" src="images/cupon-devider.png" alt="">
-                <div>
-                    <h1>Couple 20</h1>
-                    <p>Coupon Code</p>
-                </div>
-            </div>
-           </div>
-           <button class="mt-14 bg-white border-2 rounded-md p-2 border-amber-200 text-[#1DD100]">See All Offers</button>
+      <!-- Navbar Part -->
+      <div class="container flex justify-between mx-auto items-center">
+        <h1 class="font-bold text-2xl">P-Ticket</h1>
+
+        <div class="flex gap-x-10">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Destination</a>
+          <a href="#">Search</a>
         </div>
 
-        <!-- Select Ticket -->
-        <div class="bg-[#F7F8F8] w-full mt-10 rounded-tl-3xl rounded-tr-3xl border-solid border-orange-300">
-            <div class="text-center pt-14">
-                <h1 class="font-semibold text-2xl">P.H Paribahan</h1>
-                <p class=" pt-4">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
-            </div>
-            <!-- Ticket Price -->
-
-            <div class="bg-white w-[80%] mx-auto mt-10 rounded-lg">
-                <div class="flex ml-8">
-                    <div class="flex mt-10">
-                        <img class="h-8 lg:h-20" src="images/bus-logo.png" alt="Bus logo">
-                        <div class="ml-4">
-                        <h1>Greenline Paribahan</h1> 
-                        <p>Coach-009-WEB ! AC_Business</p>
-                        </div>
-                    </div>
-
-                    <img class="ml-[50%] lg:h-44" src="images/info-devider.png" alt="">
-
-                    <div class="flex">
-                        <img class="h-8" src="images/seat-green.png" alt="Seat Images">
-                        <p> 40 Seats left</p>
-                    </div>
-                </div>
-            </div>
+        <div class="flex gap-x-2 bg-green-200 p-2 px-3 rounded-md">
+          <button class="text-green-700 font-semibold">Bus</button>
+          <img src="images/bus-icon.png" alt="" />
         </div>
+      </div>
+      <!-- Banner Part -->
 
+      <div
+        style="background-image: url('images/banner.png')"
+        class="bg-no-repeat text-center mt-10 bg-center"
+      >
+        <div class="mx-auto">
+          <h1 class="text-white font-extrabold text-2xl lg:text-6xl pt-10">
+            End-to-End Travel with
+          </h1>
+          <h1 class="text-[#1DD100] pt-4 font-extrabold text-2xl lg:text-6xl">
+            P Paribahan
+          </h1>
+          <p class="mt-5 text-slate-50">
+            Yes, you can run unit tests and view the results directly within the
+            app. <br />
+            The integrated testing features allow for a streamlined .
+          </p>
+          <button
+            class="mt-52 mb-20 bg-[#1DD100] rounded-lg p-4 font-bold lg:text-xl"
+          >
+            Buy Tickets
+          </button>
+        </div>
+      </div>
+      <!-- Coupon Card -->
+      <div class="mt-28 text-center">
+        <h1 class="text-3xl font-semibold">Best Offers for you</h1>
+        <div class="flex justify-center space-x-20 mt-20">
+          <!-- Coupon Card 1 -->
+          <div
+            class="flex bg-[#FFBF0F] w-[350px] rounded-xl h-32 lg:h-44 lg:w-[550px]"
+          >
+            <div class="ml-6 my-auto">
+              <h1 class="font-extrabold text-4xl">15% OFF</h1>
+              <p class="text-xl font-bold">on your next purchase</p>
+              <p>use by January 2024</p>
+            </div>
+            <img class="ml-10 lg:ml-32" src="images/cupon-devider.png" alt="" />
+            <div class="my-auto">
+              <h1 class="font-extrabold text-2xl">NEW <sub>15</sub></h1>
+              <p>Coupon Code</p>
+            </div>
+          </div>
+          <!-- Coupon Card 2 -->
+          <div
+            class="flex justify-center bg-[#F78C9C] w-[350px] lg:w-[550px] rounded-xl h-32 lg:h-44"
+          >
+            <div class="my-auto">
+              <h1 class="font-extrabold text-4xl">20% OFF</h1>
+              <p class="font-semibold">on your next purchase</p>
+              <p>use by January 2024</p>
+            </div>
+            <img class="ml-10 lg:ml-32" src="images/cupon-devider.png" alt="" />
+            <div class="my-auto">
+              <h1 class="font-extrabold text-2xl">Couple 20</h1>
+              <p>Coupon Code</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="mt-14 bg-white border-2 rounded-md p-2 border-amber-200 text-[#1DD100]"
+        >
+          See All Offers
+        </button>
+      </div>
+
+      <!-- Select Ticket -->
+      <div
+        class="bg-[#F7F8F8] w-full h-full mt-10 rounded-tl-3xl rounded-tr-3xl border-solid border-orange-300"
+      >
+        <div class="text-center pt-14">
+          <h1 class="font-semibold text-2xl">P.H Paribahan</h1>
+          <p class="pt-4">
+            Yes, you can run unit tests and view the results directly within the
+            app. The integrated testing features allow for a streamlined .
+          </p>
+        </div>
+        <!-- Ticket Price -->
+
+        <div class="bg-white w-[80%] mx-auto mt-10 rounded-lg">
+          <div class="flex ml-8">
+            <div class="flex">
+              <div class="flex mt-10">
+                <img
+                  class="lg:h-10 mt-2"
+                  src="images/bus-logo.png"
+                  alt="Bus logo"
+                />
+                <div class="ml-4 space-y-2">
+                  <h1 class="font-semibold text-xl">Greenline Paribahan</h1>
+                  <p>Coach-009-WEB! AC_Business</p>
+                </div>
+              </div>
+              <button
+                class="flex items-center bg-green-200 rounded-md h-10 w-32 mt-10 ml-[700px]"
+              >
+                <img
+                  class="h-8"
+                  src="images/seat-green.png"
+                  alt="Seat Images"
+                />
+                <p class="ml-2 text-green-600">40 Seats left</p>
+              </button>
+            </div>
+            <div class="ml-[220px] space-y-1 mt-20">
+              <img src="images/fare.png" alt="" />
+              <div class="pt-8">
+                <h1 class="font-extrabold text-2xl">550 Taka</h1>
+                <p class="text-xl">Per Seat</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ticket Location -->
+          <section class="bg-[#F7F8F8] w-[1140px] ml-10 rounded-md">
+            <div class="flex justify-between pt-4">
+              <p class="ml-4 text-xl">Route</p>
+              <p class="mr-4 text-xl font-semibold">Dhaka - Sylhet</p>
+            </div>
+
+            <div class="flex justify-between mt-8">
+              <p class="ml-4 text-xl">Departure Time</p>
+              <p class="mr-4 text-xl font-semibold">9:00 PM</p>
+            </div>
+            <div class="flex justify-between mt-10 rounded-lg">
+              <button class="bg-gray-200 p-2 ml-4">
+                Boarding Point - Laxmipur
+              </button>
+              <button class="bg-gray-200 p-2">Dropping Point - Bogura</button>
+              <button class="bg-gray-200 p-2 mr-4">Est. Time - 11 Hour</button>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- Select Seat And booked -->
+
+      <section class="flex justify-around mt-10 w-[80%] mx-auto">
+        <!-- Left Section -->
+        <div class="">
+          <h1 class="font-semibold">Select Your Seat</h1>
+          <div style="margin-top:10px; border: 1px dashed cadetblue;"></div>
+          <div class="grid grid-cols-2">
+            <div class="flex mt-10 space-x-3">
+              <img src="images/seat-gray.png" alt=""/>
+              <p>Available</p>
+            </div>
+            <div class="flex ml-52 pt-10 space-x-3">
+              <img src="images/seat-green-filled.png" alt=""/>
+              <p class="text-green-500 font-bold">Selected</p>
+            </div>
+          </div>
+          <button class="bg-slate-300 p-3 rounded-lg px-10 mt-10 float-end">
+            <img src="images/tabler-icon-steering-wheel.svg" alt="" />
+          </button>
+
+          <!-- A1 % A2 -->
+          <div class="mt-40 grid grid-cols-5">
+            <div class="grid space-y-14 p-3 font-semibold">
+              <p>A</p>
+              <p>B</p>
+              <p>C</p>
+              <p>D</p>
+              <p>E</p>
+              <p>F</p>
+              <p>G</p>
+              <p>H</p>
+              <p>I</p>
+              <p>J</p>
+            </div>
+            <div class="grid space-y-8 ml-4">
+              <button class="bg-slate-200 p-3 rounded-lg">A1</button>
+              <button class="bg-slate-200 p-3 rounded-lg">B1</button>
+              <button class="bg-slate-200 p-3 rounded-lg">C1</button>
+              <button class="bg-slate-200 p-3 rounded-lg">D1</button>
+              <button class="bg-slate-200 p-3 rounded-lg">E1</button>
+              <button class="bg-slate-200 p-3 rounded-lg">F1</button>
+              <button class="bg-slate-200 p-3 rounded-lg">G1</button>
+              <button class="bg-slate-200 p-3 rounded-lg">H1</button>
+              <button class="bg-slate-200 p-3 rounded-lg">I1</button>
+              <button class="bg-slate-200 p-3 rounded-lg">J1</button>
+            </div>
+            <div class="grid space-y-8 ml-4">
+              <button class="bg-slate-200 p-3 rounded-lg">A2</button>
+              <button class="bg-slate-200 p-3 rounded-lg">B2</button>
+              <button class="bg-slate-200 p-3 rounded-lg">C2</button>
+              <button class="bg-slate-200 p-3 rounded-lg">D2</button>
+              <button class="bg-slate-200 p-3 rounded-lg">E2</button>
+              <button class="bg-slate-200 p-3 rounded-lg">F2</button>
+              <button class="bg-slate-200 p-3 rounded-lg">G2</button>
+              <button class="bg-slate-200 p-3 rounded-lg">H2</button>
+              <button class="bg-slate-200 p-3 rounded-lg">I2</button>
+              <button class="bg-slate-200 p-3 rounded-lg">J2</button>
+            </div>
+            <div class="grid space-y-8 ml-4">
+              <button class="bg-slate-200 p-3 rounded-lg">A3</button>
+              <button class="bg-slate-200 p-3 rounded-lg">B3</button>
+              <button class="bg-slate-200 p-3 rounded-lg">C3</button>
+              <button class="bg-slate-200 p-3 rounded-lg">D3</button>
+              <button class="bg-slate-200 p-3 rounded-lg">E3</button>
+              <button class="bg-slate-200 p-3 rounded-lg">F4</button>
+              <button class="bg-slate-200 p-3 rounded-lg">G4</button>
+              <button class="bg-slate-200 p-3 rounded-lg">H4</button>
+              <button class="bg-slate-200 p-3 rounded-lg">I4</button>
+              <button class="bg-slate-200 p-3 rounded-lg">J4</button>
+            </div>
+            <div class="grid space-y-8 ml-4">
+              <button class="bg-slate-200 p-3 rounded-lg">A4</button>
+              <button class="bg-slate-200 p-3 rounded-lg">B4</button>
+              <button class="bg-slate-200 p-3 rounded-lg">C4</button>
+              <button class="bg-slate-200 p-3 rounded-lg">D4</button>
+              <button class="bg-slate-200 p-3 rounded-lg">E4</button>
+              <button class="bg-slate-200 p-3 rounded-lg">F4</button>
+              <button class="bg-slate-200 p-3 rounded-lg">G4</button>
+              <button class="bg-slate-200 p-3 rounded-lg">H4</button>
+              <button class="bg-slate-200 p-3 rounded-lg">I4</button>
+              <button class="bg-slate-200 p-3 rounded-lg">J4</button>
+            </div>
+          </div>
+        </div>
+        <!-- Right Section -->
+        <div class="">
+          <h1 class="font-semibold">Select Your Seat</h1>
+          <div class="bg-[#F7F8F8] space-x-10 mt-10 p-8">
+            <div class="grid grid-rows-3 grid-cols-3">
+              <div class="">
+                <p class="font-semibold">
+                  Seat <span class="bg-[#1DD100] px-1 rounded-lg">0</span>
+                </p>
+                <p class="pt-2">C2</p>
+                <p class="pt-2">C2</p>
+                <p class="font-semibold">Total Price</p>
+              </div>
+              <div>
+                <p class="font-semibold">Class</p>
+                <p class="pt-2">Economoy</p>
+                <p class="pt-2">Economoy</p>
+              </div>
+              <div>
+                <p class="font-semibold">Price</p>
+                <p class="pt-2">550</p>
+                <p class="pt-2">550</p>
+                <p class="font-semibold">BDT 1100</p>
+              </div>
+            </div>
+            <div class="p-3">
+              <input class="p-3" type="text" placeholder="Have any Coupon" />
+              <button class="bg-[#1DD100] p-3">Apply</button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer>
-
-    </footer>
+    <footer></footer>
   </body>
 </html>
