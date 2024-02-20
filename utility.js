@@ -10,3 +10,6 @@ function setNewSection() {
 function setInnerText(id, value) {
   document.getElementById(id).innerText = value;
 }
+
+// Seat Selected to all function change . this is thats section 
+
