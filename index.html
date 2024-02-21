@@ -36,16 +36,16 @@
 
       <div id="bannerPart"
         style="background-image: url('images/banner.png')"
-        class="bg-no-repeat text-center mt-10 bg-center"
+        class="bg-no-repeat text-center bg-center"
       >
         <div class="mx-auto">
-          <h1 class="text-white font-extrabold text-2xl lg:text-6xl pt-14">
+          <h1 class="text-white font-extrabold text-2xl lg:text-6xl pt-16">
             End-to-End Travel with
           </h1>
-          <h1 class="text-[#1DD100] pt-10 font-extrabold text-2xl lg:text-6xl">
+          <h1 class="text-[#1DD100] pt-8 font-extrabold text-2xl lg:text-6xl">
             P Paribahan
           </h1>
-          <p class="mt-5 text-slate-50">
+          <p class="mt-10 text-slate-50">
             Yes, you can run unit tests and view the results directly within the
             app. <br />
             The integrated testing features allow for a streamlined .
@@ -147,20 +147,12 @@
                 </div>
               </div>           
             </div>
-            
-            <div
-            style="
-              height-20px;
-              background-color: rgb(56, 87, 88);
-              border-style: dashed; margin-left:80px;
-            "
-          ></div>
-            
             <!-- Amount of Ticket -->
-            <div class="pr-40">
-              <img src="images/cupon-devider.png" alt="">
-                <img src="images/fare.png" alt="">
-                <p class="pt-10 font-semibold text-2xl"><span>550</span>Taka</p>
+            <div class="pr-40 pt-28 text-center">
+                <div class="flex justify-center">
+                  <img src="images/fare.png" alt="Taka Image">
+                </div>
+                <p class="pt-8 font-semibold text-2xl"><span>550</span>Taka</p>
                 <p>Per Seat</p>
               </>
             </div>
@@ -289,85 +281,70 @@
                     </span></p>
                   </div>
                   <div class="mt-4">
-                    <input class="p-2 rounded-lg" type="text" placeholder="Have any Coupon?"/>
+                    <input class="p-2 rounded-lg" type="text" placeholder="Have any Coupon?" id="coupon"/>
                     <button disabled  id="applyCoupon"  class=" rounded-lg p-2 bg-[#1DD100] text-white font-semibold"> Apply
                     </button>
                   </div>
                   <div class="grid grid-cols-3 mt-4 font-semibold">
                     <p>Grand Total</p>
                     <p></p>
-                    <p>BDT <span id="grandTotal"></span> 0</p>
+                    <p>BDT <span id="grandTotal"></span></p>
                   </div>
                 </div>
                 <div class="mt-5">
                   <p class="font-semibold">Passenger Name*</p>
-                  <div
-                    style="
-                      margin-top: 10px;
-                      border-bottom: 1px dashed rgb(184, 226, 228);
-                    "
-                  ></div>
-                  <input
-                    type="text"
-                    placeholder="Enter your name" required
-                    class="mt-5 bg-gray-100 rounded-lg p-3 w-full"
-                  />
+                  
+                  <label><input
+                  type="text" id="name"
+                  placeholder="Enter your name" required
+                  class="grow  label mt-5 bg-gray-100 rounded-lg p-3 w-full"
+                /></label>
                 </div>
                 <div class="mt-5">
                   <p class="font-semibold">Phone Number*</p>
-                  <div
-                    style="
-                      margin-top: 10px;
-                      border-bottom: 1px dashed rgb(184, 226, 228);
-                    "
-                  ></div>
-                  <input
-                    type="number"
+              
+                  <label><input
+                    type="number" id="number"
                     placeholder="Enter your phone number"  required
-                    class="mt-5 bg-gray-100 rounded-lg p-3 w-full"
-                  />
+                    class="grow  mt-5 bg-gray-100 rounded-lg p-3 w-full"
+                  /></label>
                 </div>
                 <div class="mt-5">
                   <p class="font-semibold">Email ID</p>
-                  <div
-                    style="
-                      margin-top: 10px;
-                      border-bottom: 1px dashed rgb(184, 226, 228);
-                    "
-                  ></div>
-                  <input
-                    type="email"
-                    placeholder="Enter your email id"  required
-                    class="mt-5 bg-gray-100 rounded-lg p-3 w-full"
+                 
+                  <label>
+                    <input
+                    type="email" id="email"
+                    placeholder="Enter your email Id"  required
+                    class="grow mt-5 bg-gray-100 rounded-lg p-3 w-full"
                   />
+                  </label>
                 </div>
 
                 <!-- Modal Box -->
 
+                <button  id="nextBtn" disabled onclick="my_modal_4.showModal()"
+                class="w-full bg-[#1DD100] mt-10 p-3 rounded-lg text-white font-semibold text-xl" onclick="my_modal_4.showModal()">Next</button>
+        <dialog id="my_modal_4" class="modal bg-[#F2F1F1] w-[70%] h-[70%] mx-auto my-20 rounded-2xl">
 
-                <button id="nextBtn" disabled onclick="my_modal_4.showModal()"
-                  class="w-full bg-[#1DD100] mt-10 p-3 rounded-lg text-white font-semibold text-xl"
-                >Next
-                <button></button>
-                <dialog id="my_modal_4" class="modal">
-                  
-                  <div class="modal-box w-11/12  mx-auto space-y-5">
-                    <div class="mx-auto">
-                      <img src="images/success.png" alt="" class="text-center">
-                    <h3 class="font-bold text-lg text-[#1DD100]">SUCCESS</h3>
-                    </div>
-                    <p class="py-4">Thank you for Booking Our Bus Seats. 
-                      We are working hard to find the best service and deals for you. 
-                      Shortly you will find a confirmation in your email.</p>
-                    <div class="modal-action mx-auto">
-                      <form method="dialog">
-                        <button class="bg-[#1DD100] p-4 rounded-xl btn-success text-white text-xl font-semibold">Close</button>
-                      </form>
-                    </div>
-                  </div>
-                </dialog>
-                </button>
+           <div class="modal-box w-[1020px] h-[480px] mx-auto bg-white p-2">
+     <img src="images/success.png" alt="" class="mx-auto mt-10">
+    <h3 class="font-bold text-lg text-[#27AE60] text-center mt-10">SUCCESS</h3>
+    <div class="mx-auto px-28">
+    <p class="py-4 text-center"><span class="font-semibold">Thank you for Booking Our Bus Seats. 
+      We are working hard to find the best service and deals for you. </span> <br>
+      Shortly you will find a confirmation in your email.</p>
+   </div>
+   <div>
+    <form method="dialog">
+      <button method="dialog" class="bg-[#1DD100] w-52 p-4 rounded-lg text-white font-semibold text-xl mx-36 mt-5 ">Continue</button>
+    </form>
+  </div>
+   
+  </div>
 
+</dialog>
+                
                 <!-- Modal Box End -->
 
 
@@ -397,7 +374,7 @@
                 </div>
                 <div class="mt-10">
                   <h1 class="text-2xl font-semibold">Download our app</h1>
-                  <div class=" mt-4 flex">
+                  <div class=" mt-4 flex  border rounded-lg p-2">
                     <button><img src="images/playstore.png" alt="play store">
                     </button>
                     <div class="ml-5">
@@ -407,10 +384,10 @@
                   </div>
                 </div>
               </div>
-              <div style="margin-top:50px; border:1px dashed rgb(193, 205, 206)"></div>
-              <div class="flex justify-around text-white mt-10 ml-16">
+              <div style="margin-top:100px; width:65%; margin: 50px auto; border:1px dashed rgb(193, 205, 206)"></div>
+              <div class="flex justify-around text-white mt-10 ml-24">
                 <p>@all rights reserved, P-Ticket services limited.2024</p>
-                <div class="flex space-x-10">
+                <div class="flex space-x-10 mr-10">
                   <a href="">Terms & condition</a>
                   <a href="">Return & refund policy</a>
                   <a href="">Privacy policy</a>
