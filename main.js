@@ -1,4 +1,4 @@
-let sum = 0;
+let sum = 550;
 let seatCount = 0;
 const array = [];
 const container = document.getElementById("container");
@@ -72,6 +72,12 @@ for (const seat of seats) {
     taka2.innerText = taka;
     sum = sum + taka;
 
+    // const totalCost = document.getElementById('totalCost').innerText;
+    
+    // const convertedTotalCost = parseInt(totalCost);
+    // const sum1 = convertedTotalCost + parseInt(sum);
+    
+
     //
     const seatLeft = parseInt(document.getElementById("seat-left").innerText);
     const seats = seatLeft - 1;
@@ -105,9 +111,8 @@ for (const seat of seats) {
       }
 
     });
+    
 
-    
-    
   });
 }
 
