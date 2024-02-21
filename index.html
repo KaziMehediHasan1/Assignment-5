@@ -125,7 +125,7 @@
                 </div>
                 <div class="flex bg-[#1DD10026] rounded-lg p-4 space-x-1">
                   <img src="images/seat-green.png" alt="">
-                  <p><span id="totalSeats" class="pr-2">8</span>Seats left</p>
+                  <p><span id="seat-left" class="pr-2">8</span>Seats left</p>
                 </div>
               </div>
               <!-- Second Child -->
@@ -205,7 +205,7 @@
                     <p>B</p>
                   </div>
                   <div class="grid space-y-8 ml-4">
-                    <button id="clickSeats1" class="btn bg-slate-200 p-3 rounded-lg">A1</button>
+                    <button onclick="disable(this)"; id="clickSeats1" class="btn bg-slate-200 p-3 rounded-lg">A1</button>
                     <button id="clickSeats2" class="btn bg-slate-200 p-3 rounded-lg">B1</button>
                     
                   </div>
@@ -284,22 +284,19 @@
                   <div class="grid grid-cols-3 mt-4 font-semibold">
                     <p>Total Price</p>
                     <p></p>
-                    <p>BDT<span>1100</span></p>
+                    <p>BDT <span id="totalCost">
+                      
+                    </span></p>
                   </div>
-                  <div class="mt-5">
-                    <button class="bg-white rounded-lg p-2">
-                      <input class="p-2" type="text" placeholder="Have any Coupon?" />
-                      <a
-                        class="bg-[#1DD100] p-2 text-white font-semibold rounded-lg"
-                        href=""
-                        >Apply</a
-                      >
+                  <div class="mt-4">
+                    <input class="p-2 rounded-lg" type="text" placeholder="Have any Coupon?"/>
+                    <button disabled  id="applyCoupon"  class=" rounded-lg p-2 bg-[#1DD100] text-white font-semibold"> Apply
                     </button>
                   </div>
                   <div class="grid grid-cols-3 mt-4 font-semibold">
                     <p>Grand Total</p>
                     <p></p>
-                    <p>BDT <span>1100</span></p>
+                    <p>BDT <span id="grandTotal"></span> 0</p>
                   </div>
                 </div>
                 <div class="mt-5">
@@ -312,7 +309,7 @@
                   ></div>
                   <input
                     type="text"
-                    placeholder="Enter your name"
+                    placeholder="Enter your name" required
                     class="mt-5 bg-gray-100 rounded-lg p-3 w-full"
                   />
                 </div>
@@ -325,8 +322,8 @@
                     "
                   ></div>
                   <input
-                    type="text"
-                    placeholder="Enter your phone number"
+                    type="number"
+                    placeholder="Enter your phone number"  required
                     class="mt-5 bg-gray-100 rounded-lg p-3 w-full"
                   />
                 </div>
@@ -339,16 +336,41 @@
                     "
                   ></div>
                   <input
-                    type="text"
-                    placeholder="Enter your email id"
+                    type="email"
+                    placeholder="Enter your email id"  required
                     class="mt-5 bg-gray-100 rounded-lg p-3 w-full"
                   />
                 </div>
-                <button
+
+                <!-- Modal Box -->
+
+
+                <button id="nextBtn" disabled onclick="my_modal_4.showModal()"
                   class="w-full bg-[#1DD100] mt-10 p-3 rounded-lg text-white font-semibold text-xl"
-                >
-                  Next
+                >Next
+                <button></button>
+                <dialog id="my_modal_4" class="modal">
+                  
+                  <div class="modal-box w-11/12  mx-auto space-y-5">
+                    <div class="mx-auto">
+                      <img src="images/success.png" alt="" class="text-center">
+                    <h3 class="font-bold text-lg text-[#1DD100]">SUCCESS</h3>
+                    </div>
+                    <p class="py-4">Thank you for Booking Our Bus Seats. 
+                      We are working hard to find the best service and deals for you. 
+                      Shortly you will find a confirmation in your email.</p>
+                    <div class="modal-action mx-auto">
+                      <form method="dialog">
+                        <button class="bg-[#1DD100] p-4 rounded-xl btn-success text-white text-xl font-semibold">Close</button>
+                      </form>
+                    </div>
+                  </div>
+                </dialog>
                 </button>
+
+                <!-- Modal Box End -->
+
+
                 <div class="mt-10 flex justify-around">
                   <a style="margin-top: 10px; border-bottom: 1px solid black" href="#"
                     >Terms and Conditions</a
@@ -402,21 +424,12 @@
       
       <!-- Success Payment -->
 
-      <section class="bg-[#F2F1F1] w-[1200px] h-[800px] rounded-3xl mx-auto pt-28 mt-24 hidden">
-        <div class="bg-white w-[60%] mx-auto p-20 rounded-2xl mt-8 text-center">
-            
-          <div class="pl-56">
-            <img src="images/success.png" alt="Completed Payment">
-          </div>
-            <div class="mt-10">
-              <h1 class="font-semibold text-xl text-[#27AE60]">SUCCESS</h1>
-              <p class="font-semibold pt-10">Thank you for Booking Our Bus Seats. 
-              We are working hard to find the best service and deals for you. <span>Shortly you will find a confirmation in your email</span></p>
-            
-              <button class="mt-8 bg-[#27AE60] p-3 w-80 rounded-full text-2xl font-semibold text-white">Continue</button>
-          </div>
-        </div>
-      </section>
+
+      <!-- Modal Card -->
+
+
+
+      <!-- End Modal -->
 
     </main>
     <script src="utility.js"></script>
