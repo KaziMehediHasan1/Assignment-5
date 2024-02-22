@@ -1,4 +1,4 @@
-let sum = 550;
+let sum = 0;
 let seatCount = 0;
 const array = [];
 const container = document.getElementById("container");
@@ -15,15 +15,6 @@ const allButton = document.getElementsByClassName("btn");
 
 function click() {
   countScore.innerText = array.length;
-}
-
-
-
-for (const addBuySeats of allButton) {
-  addBuySeats.addEventListener("click", function (e) {
-    seatCount = seatCount + 1;
-    setInnerText("bookedSeats", seatCount);
-  });
 }
 
 // SeatNumber A1 - B4
@@ -44,7 +35,8 @@ for (const seat of seats) {
       alert("enough");
       seat.classList.add("#F7F7F8");
       return;
-    }
+    } seatCount = seatCount + 1;
+    setInnerText("bookedSeats", seatCount);
 
     // Economy
 
@@ -70,7 +62,7 @@ for (const seat of seats) {
     const taka = sum + 550;
     const taka2 = document.getElementById("totalCost");
     taka2.innerText = taka;
-    sum = sum + taka;
+    sum = sum + 550;
 
     // const totalCost = document.getElementById('totalCost').innerText;
     
