@@ -58,11 +58,12 @@ for (const seat of seats) {
     main3.appendChild(li3);
 
 
-
+    console.log(sum)
     const taka = sum + 550;
     const taka2 = document.getElementById("totalCost");
     taka2.innerText = taka;
     sum = sum + 550;
+    console.log(sum)
 
     // const totalCost = document.getElementById('totalCost').innerText;
     
